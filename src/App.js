@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +17,24 @@ function App() {
         >
           Learn React!
         </a>
-      </header>
+      </header> */}
+      
+      <div class="main">
+        <div class="head">
+          <div class="side">
+            <div class="side-in">
+              A simple React app that takes public Covid data and displays it per user request. 
+              Created for nwHacks 2021 by our awesome team.
+            </div>
+          </div>
+          <div class="title">
+            COVID TRACKER
+          </div>
+          <div class="links">
+            <a href="link">Link</a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
