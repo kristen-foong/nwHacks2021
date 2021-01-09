@@ -58,8 +58,8 @@
   text-align:right;
   position:absolute;
   max-width:80vw;
-  bottom:1vh; right:1vw;
-  line-height:0.8em;
+  bottom:2vh; right:1vw;
+  line-height:0.9em;
   font-family:'Jost';
   font-size:12em;
   color:#fff;
@@ -92,7 +92,7 @@
   display:flex;
   width:20vw;
   position:absolute;
-  top:5vw; left:5vw;
+  top:4vw; left:5vw;
   color:#fff;
   line-height:100%;
 }
