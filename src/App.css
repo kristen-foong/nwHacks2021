@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,16 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.main {
+  background-color: #242C3B;
+  position:relative;
+}
+.head {
+  width:100vw;
+  height:100vh;
+  background:linear-gradient(rgba(36, 44, 59, 0.7), rgba(36, 44, 59, 0.7)), url(./images/pexels-zydeaosika-3960076.jpg);
+  background-size:cover;
+  background-position:center center;
 }
