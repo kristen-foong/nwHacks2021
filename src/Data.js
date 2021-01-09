@@ -1,9 +1,9 @@
-var csv = require('./jquery.csv.js'); // Imported jquery csv library 
+console.log('Hello');
 
 class Data {
     // reads the data specified from csv
     constructor() {
-
+        console.log('Test')
     }
 
     // Creates a local array based upon data read in constructor
@@ -20,3 +20,5 @@ class Data {
 
     // Additional functions...
 }
+
+const p = new Data();
