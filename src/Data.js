@@ -50,5 +50,18 @@ function returnInfectionDays(provinceName) {
     return dayLabels;
 }
 
+// Returns array of all infections (corresponding to days) from infectionData for province
+function returnInfectionNums(provinceName) {
+    var dayANDinfection = returnInfectionData(provinceName) // array of ((day, infections confirmed)...)
+    var numLabels = [] // array of (num1, num2, num3...)
+
+    var i; // loop iterator
+    for (i=0; i < dayANDinfection.length; i++) {
+        // only add date element to dayLabels
+        numLabels.push(dayANDinfection[i][1])
+    }
+    return numLabels;
+}
+
 // Additional functions
-console.log(returnInfectionDays("Yukon"));
+console.log(returnInfectionNums("Yukon"));
