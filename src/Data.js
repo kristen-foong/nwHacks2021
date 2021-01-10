@@ -11,7 +11,7 @@ function returnInfectionData(provinceName) {
     for (i=0; i < size; i++) {
         if (infectionData[i].prname == provinceName) {
             // create array to store (day, infection)
-            var singlePoint = []
+            var singlePoint = [];
             singlePoint.push(infectionData[i].date); // get date
             singlePoint.push(infectionData[i].numconf); // get confirmedCases
             dayANDinfection.push(singlePoint); // add to array of (day, infection)
@@ -22,10 +22,13 @@ function returnInfectionData(provinceName) {
 
 // Creates a local array based upon data read in constructor
 // Returns specific information related to infectionData
-returnVaccineData = () => {
-        // pass
-    }
+// returnVaccineData(provinceName) {
+//     dayANDvaccines = []; // array of (day, vaccines distributed)
 
-// Additional functions 
+//     var size = Object.keys(vaccineData).length; // find size of JSON object
+//     var i; // loop iterator
+// }
 
-console.log(returnInfectionData("British Columbia"));
+// Additional functions
+
+console.log(returnInfectionData("Yukon"));
