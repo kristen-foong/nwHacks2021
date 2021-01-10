@@ -34,6 +34,9 @@ function App() {
             <a href="link">Link</a>
           </div>
         </div>
+        <div class="about">
+          
+        </div>
       </div>
     </div>
   );

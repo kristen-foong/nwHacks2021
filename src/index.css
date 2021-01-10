@@ -13,3 +13,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body::-webkit-scrollbar-thumb {
+  width:5px;
+  background:#fff;
+}
+body::-webkit-scrollbar-track {
+  width:5px;
+  background:rgba(0,0,0,0.5);
+}
