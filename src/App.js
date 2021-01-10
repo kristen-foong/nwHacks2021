@@ -35,7 +35,12 @@ function App() {
           </div>
         </div>
         <div class="about">
-          
+          <div class="heading">
+            ABOUT <b>COVID-19</b>:
+          </div>
+          <div class="about-desc">
+          Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The first case was identified in Wuhan, China, in December 2019. It has since spread worldwide, leading to an ongoing pandemic.
+          </div>
         </div>
       </div>
     </div>
