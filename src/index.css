@@ -14,11 +14,13 @@ code {
     monospace;
 }
 
+body::-webkit-scrollbar {
+  width:10px;
+}
+
 body::-webkit-scrollbar-thumb {
-  width:5px;
-  background:#fff;
+  background:#F47A50;
 }
 body::-webkit-scrollbar-track {
-  width:5px;
-  background:rgba(0,0,0,0.5);
+  background:#111;
 }
