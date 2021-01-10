@@ -40,3 +40,4 @@ function returnVaccineData(provinceName) {
 }
 
 // Additional functions
+console.log('Test');
