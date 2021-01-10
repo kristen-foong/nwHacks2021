@@ -40,4 +40,4 @@ function returnVaccineData(provinceName) {
 }
 
 // Additional functions
-console.log('Test');
+console.log(returnInfectionData("Yukon"));
