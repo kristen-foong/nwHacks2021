@@ -1,10 +1,9 @@
 const infectionData = require('./data/covid19-data.json')
 const vaccineData = require('./data/vaccine-distribution-data.json')
 
-// Creates a local array based upon data read in constructor
 // Returns specific information related to infectionData
 function returnInfectionData(provinceName) {
-    dayANDinfection = [] // arrays of ((day, infection)...)
+    var dayANDinfection = [] // arrays of ((day, infection)...)
 
     var size = Object.keys(infectionData).length; // find size of JSON object
     var i; // loop iterator
@@ -20,10 +19,9 @@ function returnInfectionData(provinceName) {
     return dayANDinfection;     
 }
 
-// Creates a local array based upon data read in constructor
 // Returns specific information related to infectionData
 function returnVaccineData(provinceName) {
-    dayANDvaccines = []; // array of ((day, vaccines distributed)...)
+    var dayANDvaccines = []; // array of ((day, vaccines distributed)...)
 
     var size = Object.keys(vaccineData).length; // find size of JSON object
     var i; // loop iterator
@@ -39,5 +37,31 @@ function returnVaccineData(provinceName) {
     return dayANDvaccines;
 }
 
+// Returns array of all days from infectionData for province
+function returnInfectionDays(provinceName) {
+    var dayANDinfection = returnInfectionData(provinceName) // array of ((day, infections confirmed)...)
+    var dayLabels = [] // array of (day1, day2, day3...)
+
+    var i; // loop iterator
+    for (i=0; i < dayANDinfection.length; i++) {
+        // only add date element to dayLabels
+        dayLabels.push(dayANDinfection[i][0])
+    }
+    return dayLabels;
+}
+
+// Returns array of all infections (corresponding to days) from infectionData for province
+function returnInfectionNums(provinceName) {
+    var dayANDinfection = returnInfectionData(provinceName) // array of ((day, infections confirmed)...)
+    var numLabels = [] // array of (num1, num2, num3...)
+
+    var i; // loop iterator
+    for (i=0; i < dayANDinfection.length; i++) {
+        // only add date element to dayLabels
+        numLabels.push(dayANDinfection[i][1])
+    }
+    return numLabels;
+}
+
 // Additional functions
-console.log(returnInfectionData("Yukon"));
+console.log(returnInfectionNums("Yukon"));
